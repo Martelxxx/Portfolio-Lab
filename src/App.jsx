@@ -5,6 +5,10 @@ import './App.css'
 
 const App = () => {
 
+  // Styles //
+  
+  
+
   const [todo, setTodo] = useState({ text: 'Complete Portfolio', done: false });
 
   const handleToggle = () => {
@@ -58,7 +62,10 @@ const App = () => {
   ]
 
   return (
+    
     <>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', height: '95vh',   backgroundColor: 'rgba(0, 0, 0, 0.1', 
+}}>
     <h1>My Portfolio!</h1>
     <hr />
     <h2>👋🏾 🌎</h2>
@@ -75,8 +82,9 @@ const App = () => {
           {todo.name} {todo.frontEnd ? '🎨' : '🚀'} - Comfort Level: {todo.comfort}
           {todo.comfort > 7 ? '🔥' : '😅'}
         </li>
-      ))};
+      ))}
     </ul>
+    </div>
     </>
   )
 };
